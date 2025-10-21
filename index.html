@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width,initial-scale=1"/>
 <title>Le Val — Menu</title>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 <style>
 :root {
   --bg:#FFF8E7;
@@ -14,12 +15,14 @@
 * { box-sizing: border-box; }
 body {
   font-family: 'Poppins', sans-serif;
-  background: var(--bg);
-  color: #111;
+  background: #ADD8E6; /* light blue to match the logo */
+  color: #111;          /* keep text dark for readability */
   margin: 0;
   padding: 0;
   line-height: 1.4;
 }
+
+
 .container {
   max-width: 900px;
   margin: 0 auto;
@@ -37,10 +40,11 @@ body {
 }
 .title {
   font-size: 20px;
-  color: var(--accent);
+  color: #000;    /* make the title black */
   margin: 8px 0 0;
   font-weight: 600;
 }
+
 .subtitle {
   font-size: 13px;
   color: var(--muted);
@@ -54,12 +58,13 @@ body {
   box-shadow: 0 1px 0 rgba(0,0,0,0.03);
 }
 .section h2 {
-  color: var(--accent);
+  color: #000;  /* black headings */
   margin: 0 0 10px;
   font-size: 18px;
-  border-bottom: 2px solid rgba(139,0,0,0.08);
+  border-bottom: 2px solid rgba(0,0,0,0.1);  /* optional: lighter black underline */
   padding-bottom: 8px;
 }
+
 .item {
   display: flex;
   justify-content: space-between;
@@ -83,11 +88,12 @@ body {
   margin-top: 4px;
 }
 .price {
-  color: var(--accent);
+  color: #000;  /* black prices */
   font-weight: 600;
   min-width: 70px;
   text-align: right;
 }
+
 .footer {
   padding: 18px;
   text-align: center;
@@ -105,6 +111,7 @@ body {
 </style>
 </head>
 <body>
+
 <div class="container">
   <header class="header">
 
@@ -114,99 +121,8 @@ body {
     <div class="subtitle">Authentic Lebanese cuisine</div>
   </header>
 
-  <section class="section">
-    <h2> Wraps (Lunch Deals)</h2>
-
-    <div class="item">
-      <div class="left">
-        <div class="name">Lamb Shawarma (G) (SE)</div>
-        <div class="desc">Thin Roasted slices of Marinated Lamb.</div>
-      </div>
-      <div class="price">£10.95</div>
-    </div>
-
-    <div class="item">
-      <div class="left">
-        <div class="name">Shish Taouk (Charcoal Grilled) (G)</div>
-        <div class="desc">Skewer of Marinated Tender Chicken Cubes.</div>
-      </div>
-      <div class="price">£10.95</div>
-    </div>
-
-    <div class="item">
-      <div class="left">
-        <div class="name">Shish Kebab (Charcoal Grilled) (G) (SE)</div>
-        <div class="desc">Skewers of Tender Cubes of specially Prepared Lamb.</div>
-      </div>
-      <div class="price">£10.95</div>
-    </div>
-
-    <div class="item">
-      <div class="left">
-        <div class="name">Soujouk (G)</div>
-        <div class="desc">Home-Made Spicy Lebanese Sausages.</div>
-      </div>
-      <div class="price">£10.95</div>
-    </div>
-
-    <div class="item">
-      <div class="left">
-        <div class="name">Falafel (V) (G) (SE)</div>
-        <div class="desc">Beans &amp; Chickpeas Croquettes.</div>
-      </div>
-      <div class="price">£10.95</div>
-    </div>
-
-    <div class="item">
-      <div class="left">
-        <div class="name">Spicy Potatoes (V) (G)</div>
-        <div class="desc">Spicy Potato Cubes Flame Glazed with Garlic, Sweet Pepper, Coriander, &amp; Chilli.</div>
-      </div>
-      <div class="price">£10.95</div>
-    </div>
-
-    <div class="item">
-      <div class="left">
-        <div class="name">Halloumi Cheese (Charcoal Grilled) (V) (D) (G)</div>
-        <div class="desc">Slices of Halloumi Cheese, Grilled until soft.</div>
-      </div>
-      <div class="price">£10.95</div>
-    </div>
-
-    <div class="item">
-      <div class="left">
-        <div class="name">Chicken Shawarma</div>
-        <div class="desc">Thin Roasted slices of Marinated Chicken.</div>
-      </div>
-      <div class="price">£10.95</div>
-    </div>
-
-    <div class="item">
-      <div class="left">
-        <div class="name">Mix Shawarma (G) (SE)</div>
-        <div class="desc">Thin Roasted slices of Marinated Chicken &amp; Lamb.</div>
-      </div>
-      <div class="price">£10.95</div>
-    </div>
-
-    <div class="item">
-      <div class="left">
-        <div class="name">Kafta Charcoal (Charcoal Grilled) (G) (SE)</div>
-        <div class="desc">Minced Lamb on the Skewer with Parsley &amp; Onions.</div>
-      </div>
-      <div class="price">£10.95</div>
-    </div>
-
-    <div class="item">
-      <div class="left">
-        <div class="name">Chicken Liver (G)</div>
-        <div class="desc">Marinated Chicken Liver.</div>
-      </div>
-      <div class="price">£10.95</div>
-    </div>
-
-  </section>
-
+  
+<div class="section-wrapper">
   <section class="section">
   <h2>Cold Mezze</h2>
 
@@ -323,7 +239,8 @@ body {
   </div>
 
 </section>
-
+  
+  </div>
 
   <!-- ========== Hot Starters & Small Plates ========== -->
   <section class="section">
@@ -553,7 +470,7 @@ body {
 
   <!-- ========== Grills & Mains ========== -->
   <section class="section">
-    <h2>Grills &amp; Mains</h2>
+    <h2> Main Courses </h2>
 
     <div class="item">
       <div class="left">
@@ -763,6 +680,99 @@ body {
 
   </section>
 
+
+  <section class="section">
+    <h2> Wraps (Lunch Deals)</h2>
+
+    <div class="item">
+      <div class="left">
+        <div class="name">Lamb Shawarma (G) (SE)</div>
+        <div class="desc">Thin Roasted slices of Marinated Lamb.</div>
+      </div>
+      <div class="price">£10.95</div>
+    </div>
+
+    <div class="item">
+      <div class="left">
+        <div class="name">Shish Taouk (Charcoal Grilled) (G)</div>
+        <div class="desc">Skewer of Marinated Tender Chicken Cubes.</div>
+      </div>
+      <div class="price">£10.95</div>
+    </div>
+
+    <div class="item">
+      <div class="left">
+        <div class="name">Shish Kebab (Charcoal Grilled) (G) (SE)</div>
+        <div class="desc">Skewers of Tender Cubes of specially Prepared Lamb.</div>
+      </div>
+      <div class="price">£10.95</div>
+    </div>
+
+    <div class="item">
+      <div class="left">
+        <div class="name">Soujouk (G)</div>
+        <div class="desc">Home-Made Spicy Lebanese Sausages.</div>
+      </div>
+      <div class="price">£10.95</div>
+    </div>
+
+    <div class="item">
+      <div class="left">
+        <div class="name">Falafel (V) (G) (SE)</div>
+        <div class="desc">Beans &amp; Chickpeas Croquettes.</div>
+      </div>
+      <div class="price">£10.95</div>
+    </div>
+
+    <div class="item">
+      <div class="left">
+        <div class="name">Spicy Potatoes (V) (G)</div>
+        <div class="desc">Spicy Potato Cubes Flame Glazed with Garlic, Sweet Pepper, Coriander, &amp; Chilli.</div>
+      </div>
+      <div class="price">£10.95</div>
+    </div>
+
+    <div class="item">
+      <div class="left">
+        <div class="name">Halloumi Cheese (Charcoal Grilled) (V) (D) (G)</div>
+        <div class="desc">Slices of Halloumi Cheese, Grilled until soft.</div>
+      </div>
+      <div class="price">£10.95</div>
+    </div>
+
+    <div class="item">
+      <div class="left">
+        <div class="name">Chicken Shawarma</div>
+        <div class="desc">Thin Roasted slices of Marinated Chicken.</div>
+      </div>
+      <div class="price">£10.95</div>
+    </div>
+
+    <div class="item">
+      <div class="left">
+        <div class="name">Mix Shawarma (G) (SE)</div>
+        <div class="desc">Thin Roasted slices of Marinated Chicken &amp; Lamb.</div>
+      </div>
+      <div class="price">£10.95</div>
+    </div>
+
+    <div class="item">
+      <div class="left">
+        <div class="name">Kafta Charcoal (Charcoal Grilled) (G) (SE)</div>
+        <div class="desc">Minced Lamb on the Skewer with Parsley &amp; Onions.</div>
+      </div>
+      <div class="price">£10.95</div>
+    </div>
+
+    <div class="item">
+      <div class="left">
+        <div class="name">Chicken Liver (G)</div>
+        <div class="desc">Marinated Chicken Liver.</div>
+      </div>
+      <div class="price">£10.95</div>
+    </div>
+
+  </section>
   <!-- ========== Sides & Rice ========== -->
   <section class="section">
     <h2>Sides &amp; Rice</h2>
@@ -902,5 +912,18 @@ body {
 
   <footer class="footer">© 2025 Le Val | Kingston upon Thames</footer>
 </div>
+  
 </body>
+
+<footer class="allergy-info">
+  <p>
+    We use nuts in our kitchen and our food may contain traces of nuts.<br><br>
+    * Vegetarian (V) / Celery (C) /  Gluten (G) Crustaceans (C) (R); /  Eggs (E) /  Fish  (F) / Lupin (L)/ Milk (M) / Mustard (M)(U) /
+     Nuts (N)/ Peanuts (P) / Sesame (S)/ Soya (S)(O) / Sulphites (S) /  Spicy
+  </p>
+  <p class="service-charge">
+    A discretionary 10% service charge will be added to your bill.
+  </p>
+</footer>
+
 </html>
